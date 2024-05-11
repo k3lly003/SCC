@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: poppins, sans-serif;
+      }
+      .parent {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-color: var(rgba(0, 0, 0, 0.6));
+        display: none;
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        padding-top: -300px;
+      }
+      .child {
+        border: 1px solid rgb(17, 18, 17);
+        background-color: azure;
+        height: 20%;
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      span {
+        /* border: 1px solid red; */
+        display: flex;
+        width: 10px;
+        height: 15px;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      span:hover {
+        color: rgb(185, 195, 185);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>This is the Progress</h2>
+    <button id="btn">ok</button>
+    <div class="parent">
+      <p class="child">This is the Headed</p>
+      <p class="child"></p>
+      <p class="child">This is the footer</p>
+      <span>&times;</span>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
