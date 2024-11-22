@@ -1,0 +1,50 @@
+
+
+
+
+.container {
+    border: 1px solid red;
+    display: grid;
+    grid-auto-rows: 2 00px;
+
+    /* by default it doen't have space so we need gap */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* gap: 20px; */
+
+    /* by default it has some space we don't need gap */
+    /* grid-template-rows: 100px 100px 100px; */
+     /* I don't see the need of it */
+    /* grid-template-areas: "Header Header Header" "Body footer"; */
+
+}
+
+.one {
+    height: 30rem;
+    background-color: purple;
+    /* grid-column: 1 / 3; */
+}
+.two {
+    height: 30rem;
+    background-color: blue;
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
+}
+.three {
+    height: 30rem;
+    background-color: yellow;
+
+    /* changes the position */
+    /* grid-row: 1 / 5; */
+}
+.four {
+    height: 30rem;
+    background-color: green;
+    /* grid-column: 1 / 3; */
+}
+.five {
+    height: 30rem;
+    background-color: red;
+
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+}

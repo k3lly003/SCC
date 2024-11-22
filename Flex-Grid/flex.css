@@ -1,0 +1,31 @@
+.container {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.one {
+    height: 10rem;
+    /* width: 10rem; */
+    background-color: purple;
+}
+.two {
+    height: 10rem;
+    /* width: 10rem; */
+    background-color: blue;
+}
+.three {
+    height: 10rem;
+    /* width: 10rem; */
+    background-color: yellow;
+}
+.four {
+    height: 10rem;
+    /* width: 10rem; */
+    background-color: green;
+}
+.five {
+    height: 10rem;
+    /* width: 10rem; */
+    background-color: red;
+}
