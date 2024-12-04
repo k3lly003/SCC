@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: "Oswald", sans-serif;
+   background: var(--fifthcolor);
+}
+*{
+    margin: 0;
+}
+:root{
+    --maincolor : white;
+    --secondarycolor : black;
+    --thirdcolor: grey;
+    --fourthcolor: red;
+    --fifthcolor: rgb(183, 183, 183);
+}
+
+/* HEADER CSS STYLES */
+header{
+  background: var(--secondarycolor);
+  color: var(--maincolor);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+}
+.nav-link{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 10%;
+}
+
+.nav-links div{
+    padding: 1.7% 1.5%;
+}
+.nav-links div:hover{
+    background: var(--thirdcolor);
+}
+
+
+.nav-link div{
+    padding: 10% 10%;
+}
+.nav-link div:hover{
+    background: var(--thirdcolor);
+}
+
+
+
+/* MAIN CSS STYLES */
+main{
+  background: var(--fifthcolor);
+  border: 1px solid var(--secondarycolor) ;
+  width: 80%;
+}
+footer{
+  background: var(--thirdcolor);
+  width: 100%;    
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5%;
+}
+.ft-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--secondarycolor);
+    padding: 10px 0;
+    width: 9%;
+    color: var(--maincolor);
+    font-size: large;
+}
+.ft-bot{
+    font-size: large;
+    color: var(--maincolor);
+}
+.ft-bot a{
+    color: var(--maincolor);
+}
