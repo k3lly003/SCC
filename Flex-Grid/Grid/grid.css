@@ -1,0 +1,41 @@
+body{
+    color: #fff;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+}
+#content{
+    display: grid;
+    grid-template-columns: 15% 25% 20%;
+    grid-gap: 10px;
+    /* grid-template-rows: repeat(4, minmax(150px, auto));
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto; */
+}
+#content div{
+    background: #3bbced;
+    padding: 30px;
+}
+#content div:nth-child(even){
+    background: #777;
+    padding: 30px;
+}
+.one{
+ grid-column: 1/5;
+}
+.two{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.three{
+   grid-column: 2/4; 
+}
+.four{
+    
+}
+.five{
+   grid-column: 2/5; 
+}
+.six{
+    
+}
