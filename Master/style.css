@@ -1,90 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   font-family: "Oswald", sans-serif;
-   background: var(--fifthcolor);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  background: var(--fifthcolor);
 }
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-:root{
-    --maincolor : white;
-    --secondarycolor : black;
-    --thirdcolor: grey;
-    --fourthcolor: red;
-    --fifthcolor: rgb(183, 183, 183);
+:root {
+  --maincolor: white;
+  --secondarycolor: black;
+  --thirdcolor: grey;
+  --fourthcolor: red;
+  --fifthcolor: rgb(234, 234, 234);
 }
+
 
 /* HEADER CSS STYLES */
-header{
+header {
   background: var(--secondarycolor);
   color: var(--maincolor);
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.nav-links{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 60%;
+.nav-links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 60%;
 }
-.nav-link{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 10%;
-}
-
-.nav-links div{
-    padding: 1.7% 1.5%;
-}
-.nav-links div:hover{
-    background: var(--thirdcolor);
+.nav-link {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 10%;
 }
 
+.nav-links div {
+  padding: 1.7% 1.5%;
+}
+.nav-links div:hover {
+  background: var(--thirdcolor);
+}
 
-.nav-link div{
-    padding: 10% 10%;
+.nav-link div {
+  padding: 10% 10%;
 }
-.nav-link div:hover{
-    background: var(--thirdcolor);
+.nav-link div:hover {
+  background: var(--thirdcolor);
 }
+
+
 
 
 
 /* MAIN CSS STYLES */
-main{
+main {
   background: var(--fifthcolor);
-  border: 1px solid var(--secondarycolor) ;
-  width: 80%;
+  border: 1px solid var(--thirdcolor);
+  max-width: 1440px;
 }
-footer{
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.container-l {
+  /* background: #13ab23; */
+  width: 60%;
+}
+.title {
+  /* background: #000; */
+  /* color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.title h5 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.title p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.section{
+    background-color: var(--maincolor);
+    width: 100%;
+    padding: 10px 20px;
+}
+.section img{
+    width: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.description p{
+    font-weight: 300;
+}
+.container-r {
+  /* background: red; */
+  width: 35%;
+}
+#date {
+  color: var(--thirdcolor);
+  font-size: 12px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.btn-1 {
+    border: 1px solid black;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.btn-1:hover{
+    border: 0;
+    background: var(--thirdcolor);
+}
+.btn-2 {
+    background: var(--secondarycolor);
+    color: var(--maincolor);
+    padding: 0 10px;
+    cursor: pointer;
+}
+.btn-2:hover{
+    /* border: 0; */
+    background: var(--secondarycolor);
+    color: var(--maincolor);
+}
+.comments {
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid var(--fifthcolor);
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.img-smoke img{
+    width: 75px;
+    height: 75px;
+}
+.cmt-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+   }
+.cmt-desc h1 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.cmt-desc span{
+    color: var(--thirdcolor);
+    font-size: 12px;
+}
+.cmt-desc p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.sec-four{
+    /* background: #aeeb94; */
+}
+.sec-four h1{
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.tags{
+    background: var(--maincolor);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tags span{
+  background-color: var(--fifthcolor);
+  padding: 2px 6px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  background-color: var(--fifthcolor);
+}
+.tags span:first-child{
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
+}
+
+
+
+
+/* FOOTER CSS STYLES */
+footer {
   background: var(--thirdcolor);
-  width: 100%;    
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5%;
 }
-.ft-top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    background: var(--secondarycolor);
-    padding: 10px 0;
-    width: 9%;
-    color: var(--maincolor);
-    font-size: large;
+.ft-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: var(--secondarycolor);
+  padding: 10px 0;
+  width: 9%;
+  color: var(--maincolor);
+  font-size: large;
 }
-.ft-bot{
-    font-size: large;
-    color: var(--maincolor);
+.ft-bot {
+  font-size: large;
+  color: var(--maincolor);
 }
-.ft-bot a{
-    color: var(--maincolor);
+.ft-bot a {
+  color: var(--maincolor);
 }
